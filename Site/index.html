@@ -1,84 +1,98 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="ru"><head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Portfolio">
-    <meta name="description" content="">
-    <title>Main</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Main.css" media="screen">
-    <script class="u-script" src="jquery.js" defer=""></script>
-    <script class="u-script" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "",
-		"logo": "images/ea.png"
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Main">
-    <meta property="og:type" content="website">
- </head>
-  <body data-home-page="index.html" data-home-page-title="Main" class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-header" id="sec-bed4"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="index.html#carousel_fe05" class="u-image u-logo u-image-1" data-image-width="701" data-image-height="660" title="Main page">
-          <img src="images/ea.png" alt="It's me" class="u-logo-image u-logo-image-1">
+<html lang="en">
 
-        </a>
-        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="index.html" style="padding: 10px 20px;">Main</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact-Us.html" style="padding: 10px 20px;">Contact Us</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html">Main</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact-Us.html">Contact Us</a>
-</li></ul>
-              </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Sicor - Curriculum Vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="website.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="https://github.com/4Sicor42/HTML_CSS_CV/assets/42892642/37e2c413-6208-4039-af0e-fae35ed5b239"
+                alt="Profile Picture" class="profile-img" width="500" height="500">
+            <h1>Sicor</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/4Sicor42" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>About me</h2>
+            <p>
+                Enthusiastic and motivated computer science student with a solid grasp of theoretical and practical concepts. I'm currently working towards a Computer Science degree at the prestigious Belarussian university, where I've had the opportunity to explore various programming languages, algorithms, and data structures. By engaging in both coursework and personal projects, I've acquired a strong comprehension of software development principles and problem-solving strategies.
+            </p>
+
+            <h2>Technologies in My Toolkit</h2>
+            <ul>
+                <li>C#</li>
+                <li>Python</li>
+            </ul>
+            
+            <h2>Code Example</h2>
+            <div class="code-example">
+                <pre><code>
+class MergeSortAlgorithm
+{
+    static void Merge(int[] array, int left, int middle, int right)
+    {
+        int n1 = middle - left + 1;
+        int n2 = right - middle;
+
+        int[] leftArray = new int[n1];
+        int[] rightArray = new int[n2];
+
+        for (int i = 0; i < n1; ++i)
+            leftArray[i] = array[left + i];
+        for (int j = 0; j < n2; ++j)
+            rightArray[j] = array[middle + 1 + j];
+
+        int index1 = 0, index2 = 0;
+        int mergedIndex = left;
+
+        while (index1 < n1 && index2 < n2)
+        {
+            if (leftArray[index1] <= rightArray[index2])
+            {
+                array[mergedIndex] = leftArray[index1];
+                index1++;
+            }
+            else
+            {
+                array[mergedIndex] = rightArray[index2];
+                index2++;
+            }
+            mergedIndex++;
+        }
+
+        while (index1 < n1)
+        {
+            array[mergedIndex] = leftArray[index1];
+            index1++;
+            mergedIndex++;
+        }
+
+        while (index2 < n2)
+        {
+            array[mergedIndex] = rightArray[index2];
+            index2++;
+            mergedIndex++;
+        }
+    }
+}
+            </code></pre>
             </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-      </div></header>
-    <section class="u-align-right u-clearfix u-section-1" id="carousel_fe05">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-custom-font u-font-raleway u-text u-text-default u-text-1">Portfolio</h2>
-        <p class="u-align-left u-text u-text-2"> Explore my portfolio to see a showcase of my skills, projects, and accomplishments. From web development to programming expertise, this collection reflects my dedication to innovation, creativity, and continuous growth in the field. Get inspired, discover my work, and let's create something amazing together.</p>
-        <div class="u-border-3 u-border-palette-1-base u-expanded-width u-line u-line-horizontal u-line-1"></div>
-        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-align-justify u-container-style u-layout-cell u-size-37 u-layout-cell-1">
-                <div class="u-container-layout u-container-layout-1">
-                  <p class="u-text u-text-default u-text-3">Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. Oh feel if up to till like.&nbsp;He an thing rapid these after going drawn or.&nbsp;<br>
-                    <br>
-                    <span style="font-style: italic; font-weight: 700;">Timed she his law the spoil round defer. In surprise concerns informed betrayed he learning is ye. Ignorant formerly so ye blessing. He as spoke avoid given downs money on we. Of properly carriage shutters ye as wandered up repeated moreover.</span>
-                  </p>
-                  <a href="Contact-Us.html" class="u-btn u-btn-round u-button-style u-hover-black u-palette-1-base u-radius-50 u-text-body-alt-color u-text-hover-white u-btn-1">Contact Us</a>
-                </div>
-              </div>
-              <div class="u-container-style u-image u-layout-cell u-size-23 u-image-1" data-image-width="1001" data-image-height="1500">
-                <div class="u-container-layout u-container-layout-2"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>  
-</body></html>
+        </main>
+        <footer>
+            2023
+        </footer>
+    </div>
+</body>
+
+</html>
