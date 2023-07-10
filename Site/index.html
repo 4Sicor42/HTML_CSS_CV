@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sicor - Curriculum Vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="website.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="https://github.com/4Sicor42/HTML_CSS_CV/assets/42892642/37e2c413-6208-4039-af0e-fae35ed5b239"
+                alt="Profile Picture" class="profile-img" width="500" height="500">
+            <h1>Sicor</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/4Sicor42" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>About me</h2>
+            <p>
+                Enthusiastic and motivated computer science student with a solid grasp of theoretical and practical concepts. I'm currently working towards a Computer Science degree at the prestigious Belarussian university, where I've had the opportunity to explore various programming languages, algorithms, and data structures. By engaging in both coursework and personal projects, I've acquired a strong comprehension of software development principles and problem-solving strategies.
+            </p>
+
+            <h2>Technologies in My Toolkit</h2>
+            <ul>
+                <li>C#</li>
+                <li>Python</li>
+            </ul>
+            
+            <h2>Code Example</h2>
+            <div class="code-example">
+                <pre><code>
+class MergeSortAlgorithm
+{
+    static void Merge(int[] array, int left, int middle, int right)
+    {
+        int n1 = middle - left + 1;
+        int n2 = right - middle;
+
+        int[] leftArray = new int[n1];
+        int[] rightArray = new int[n2];
+
+        for (int i = 0; i &lt; n1; ++i)
+            leftArray[i] = array[left + i];
+        for (int j = 0; j &lt; n2; ++j)
+            rightArray[j] = array[middle + 1 + j];
+
+        int index1 = 0, index2 = 0;
+        int mergedIndex = left;
+
+        while (index1 &lt; n1 && index2 &lt; n2)
+        {
+            if (leftArray[index1] &lt;= rightArray[index2])
+            {
+                array[mergedIndex] = leftArray[index1];
+                index1++;
+            }
+            else
+            {
+                array[mergedIndex] = rightArray[index2];
+                index2++;
+            }
+            mergedIndex++;
+        }
+
+        while (index1 &lt; n1)
+        {
+            array[mergedIndex] = leftArray[index1];
+            index1++;
+            mergedIndex++;
+        }
+
+        while (index2 &lt; n2)
+        {
+            array[mergedIndex] = rightArray[index2];
+            index2++;
+            mergedIndex++;
+        }
+    }
+}
+            </code></pre>
+            </div>
+        </main>
+        <footer>
+            2023
+        </footer>
+    </div>
+</body>
+
+</html>
