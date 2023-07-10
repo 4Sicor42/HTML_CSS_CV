@@ -48,17 +48,17 @@ class MergeSortAlgorithm
         int[] leftArray = new int[n1];
         int[] rightArray = new int[n2];
 
-        for (int i = 0; i < n1; ++i)
+        for (int i = 0; i &lt; n1; ++i)
             leftArray[i] = array[left + i];
-        for (int j = 0; j < n2; ++j)
+        for (int j = 0; j &lt; n2; ++j)
             rightArray[j] = array[middle + 1 + j];
 
         int index1 = 0, index2 = 0;
         int mergedIndex = left;
 
-        while (index1 < n1 && index2 < n2)
+        while (index1 &lt; n1 && index2 &lt; n2)
         {
-            if (leftArray[index1] <= rightArray[index2])
+            if (leftArray[index1] &lt;= rightArray[index2])
             {
                 array[mergedIndex] = leftArray[index1];
                 index1++;
@@ -71,14 +71,14 @@ class MergeSortAlgorithm
             mergedIndex++;
         }
 
-        while (index1 < n1)
+        while (index1 &lt; n1)
         {
             array[mergedIndex] = leftArray[index1];
             index1++;
             mergedIndex++;
         }
 
-        while (index2 < n2)
+        while (index2 &lt; n2)
         {
             array[mergedIndex] = rightArray[index2];
             index2++;
